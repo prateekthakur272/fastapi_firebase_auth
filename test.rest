@@ -1,0 +1,25 @@
+### index of api returns basic information about api in response
+GET http://127.0.0.1:8000/api/index HTTP/1.1
+
+### Register new user with email and password
+POST http://127.0.0.1:8000/api/auth/register HTTP/1.1
+content-type: application/json
+
+{
+  "email": "your_email@gmail.com",
+  "password": "your_password"
+}
+
+### Login user with email and password
+POST http://127.0.0.1:8000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+  "email": "your_email@gmail.com",
+  "password": "your_password"
+}
+
+### Ping user (validate user jwt)
+POST http://127.0.0.1:8000/api/auth/ping HTTP/1.1
+content-type: application/json
+Authorization: your_jwt_token
