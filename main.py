@@ -16,8 +16,8 @@ from models.login_schema import LoginSchema
 from models.register_schema import RegisterSchema
 
 
-description = 'API for Derm-Detect cancer detection application'
-title = 'Derm-Detect'
+description = 'Authentication API'
+title = 'Auth'
 api_route = '/api'
 
 app = FastAPI(
